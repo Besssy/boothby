@@ -3,7 +3,7 @@ const path = require('path');
 module.exports = {
   context: path.join(__dirname, 'src'),
   entry: [
-    './main.js',
+    './index.js',
   ],
   output: {
     path: path.join(__dirname, 'www'),
@@ -17,6 +17,10 @@ module.exports = {
         use: [
           'babel-loader',
         ],
+      },
+      {
+        test: /\.(css|scss)$/,
+          loaders: ['style-loader', 'css-loader', 'sass-loader']
       },
     ],
   },
