@@ -20,7 +20,11 @@ module.exports = {
       },
       {
         test: /\.(css|scss)$/,
-          loaders: ['style-loader', 'css-loader', 'sass-loader']
+        loaders: ['style-loader', 'css-loader', 'sass-loader']
+      },
+      {
+        test: /\.(png|jpg|svg)$/,
+        loader:"file-loader?name=/www/[name].[ext]"
       },
     ],
   },
