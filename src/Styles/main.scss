@@ -1,0 +1,22 @@
+@import "variables.scss";
+
+body{
+	font-family: $font-family;
+}
+
+.header-title{
+	background-image: url('/assets/header-bg.jpg');
+	height: 600px;
+}
+
+.home, .reserve{
+	background-color: $dark;
+}
+
+.about{
+	background-color: $red;
+}
+
+.form-control{
+	background-color: $grey !important;
+}
