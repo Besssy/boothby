@@ -8,54 +8,18 @@ import '../Styles/main.scss';
 
 
 class Header extends Component {
-	constructor(props) {
-	    super(props);
-
-	    this.toggle = this.toggle.bind(this);
-	    this.state = {
-	      isOpen: false
-	    };
-	}
-	toggle() {
-	    this.setState({
-	      isOpen: !this.state.isOpen
-	    });
-	}
   render() {
     return (
-      <div>
-        <Navbar color="faded" light toggleable>
-          <NavbarToggler right onClick={this.toggle} />
-          <NavbarBrand href="/">Bouthby</NavbarBrand>
-          <Collapse isOpen={this.state.isOpen} navbar>
-            <Nav className="ml-auto" navbar>
-              <NavItem>
-                <NavLink href="#">Home</NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink href="#">About</NavLink>
-              </NavItem>
-               <NavItem>
-                <NavLink href="#">Reserve</NavLink>
-              </NavItem>
-               <NavItem>
-                <NavLink href="#">Contact</NavLink>
-              </NavItem>
-            </Nav>
-          </Collapse>
-        </Navbar>
-        <div className="header">
-          <div className="header-title text-center">
-            <h1 className="display-3 title-white"> Impress <br/> your guests</h1>
-            <h1 className="display-3 title-red"> with our <br /> fantastic cocktails </h1>
+      <Row>
+        <div className="header d-flex justify-content-center align-items-center text-center">
+          <div className="header-title">
+            <h1 className="title-white"> Impress <br/> your guests</h1>
+            <h1 className="title-red"> with our <br /> fantastic cocktails </h1>
           </div>
         </div>
-      </div>
+      </Row>
     );
   }
 }
-
-
-
 
 export default Header;
