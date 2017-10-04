@@ -4,19 +4,86 @@ body{
 	font-family: $font-family;
 }
 
-.header-title{
-	background-image: url('/assets/header-bg.jpg');
-	height: 600px;
+.nav-link{
+	color: $white !important;
+	font-size: 1.5rem;
 }
 
-.home, .reserve{
+.navbar{
+	background-color: $red;
+	padding: 0.5rem 3rem !important;
+	.title{
+		color: $white;
+	}
+}
+
+.row{
+	margin-left: 0px !important;
+	margin-right: 0px !important;
+}
+
+.header{
+	background-image: url('/assets/header-bg.jpg');
+	background-position: center;
+	background-size: cover;
+	height: 600px;
+	width: 100%;
+	.header-title{
+		h1{
+			font-size: 5rem;
+		}
+		.title-white{
+			color: $white;
+			font-weight: 400;
+	    }
+		.title-red{
+			color: $red;
+			font-weight: 300;
+		}
+	}
+}
+
+.home{
 	background-color: $dark;
+	padding: 100px 0px;
+	color: $white;
+	h1{
+		font-size: 4rem;
+	}
+	.title-white{
+		font-weight: 400;
+	}
 }
 
 .about{
 	background-color: $red;
+	color: $white;
+	height: 600px;
 }
 
-.form-control{
-	background-color: $grey !important;
+.reserve{
+	background-color: $dark;
+	color: $white;
+	padding: 100px 0px;
+	.client-form{
+		background-color: $grey !important;
+		margin: 20px 0px;
+		border-radius: 0rem !important;
+		padding: 0.5rem 0.75rem 1.5rem 0.75rem!important;
+		color: $white;
+	}
+	.client-form-message{
+		height: 200px;
+	}
+	.red-button{
+		background-color: $red;
+		border-radius: 0rem;
+		color: $white;
+		border-color: transparent;
+		padding: 1rem 1.5rem;
+		h4{
+			margin-bottom: 0rem;
+		}
+	}
 }
+
