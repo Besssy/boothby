@@ -6,4 +6,4 @@ A web application for event planning.
 - ReactJS
 - Bootstrap 4
 - SASS
-- Font Awesome 5
+- Font Awesome
